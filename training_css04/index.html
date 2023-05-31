@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マテリアルスイーツ</title>
+    <style>
+        /* ページ全体 */
+        body{
+            font-size:16px;
+            background-color:ivory;
+            background-image:url(images/gold_back.jpg);
+            background-repeat:repeat-y;
+        }
+        /*リセット*/
+        h1,h2,h3,ul,li,p{
+            margin :0;
+            padding:0;
+        }
+        /*ヘッダー*/
+        header{
+            width:640px;
+            background-color:bisque;
+        }
+        h1{
+            margin-left:20px;
+            font-size:32px;
+            color:crimson;
+        }
+        header p{margin-left:20px;}
+        /*ナビゲーション*/
+        nav{
+            padding-top:5px;
+            padding-bottom:5px;
+            overflow:hidden;
+            background-color:burlywood;
+        }
+        nav ul{list-style-type:none;}
+        nav li{
+            width:298px;
+            height:38px;
+            margin-left:5px;
+            margin-right:5px;
+            margin:5px;
+            padding:5px;
+            line-height:38px;
+            float:left;
+            border:solid 1px brown;
+            background-color:bisque;
+        }
+        /*メインコンテンツ　CSS*/
+        main{
+            width:620px;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:20px;
+            background-color:antiquewhite;
+            overflow:hidden;
+        }
+        h2{
+            font-size:24px;
+            color:darkred;
+        }
+        .sweets{
+            width:270px;
+            padding:10px;
+            margin-top:20px;
+            margin-right:20px;
+            float:left;
+            background-color:burlywood;
+        }
+        h3{
+            font-size:20px;
+            color:brown;
+        }
+        /*フッター　CSS*/
+        footer{
+            clear:both;
+            width:600px;
+            padding:20px;
+            text-align:right;
+            background-color:bisque;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>マテリアルスイーツ</h1>
+        <p>伝統と素材にこだわった季節のフルーツを使用したお店です。</p>
+        <img src="images/header.jpg" alt="金のモンブランヘッダー画像">
+        <nav>
+            <ul>
+                <li><a href="#">モンブラン</a></li>
+                <li><a href="#">マカロン</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>ピックアップスイーツ</h2>
+            <p>今月のお勧めのスイーツを２つ紹介します。</p>
+            <section class = "sweets">
+                <h3>モンブラン</h3>
+                <p>今年採れた国内産の栗を使用したケーキです。</p>
+                <img src="images/blanc2.jpg" alt="モンブランの写真">
+            </section>
+            <section class = "sweets">
+                <h3>マカロン</h3>
+                <p>沖縄産の砂糖を使用したケーキです。</p>
+                <img src="images/macron2.jpg" alt="マカロンの写真">
+            </section>
+        </article>
+    </main>
+    <footer>
+        <small>&copy; 2018 Material Sweets.</small>
+    </footer>
+</body>
+</html>
