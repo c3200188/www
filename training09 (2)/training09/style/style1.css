@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* マテリアルスイーツ　CSS　*/
+body {
+    font-family: "Yu Gothic",YuGothic,"ＭＳ Ｐゴシック",Meiryo;
+    font-size: 16px;
+    background-image: url(../images/gold_back.jpg);
+    background-repeat: repeat-y;
+}
+/* リセット　CSS　*/
+h1,h2,h3,h4,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+/* Webページのセンタリング　CSS　*/
+#wrap{
+    width: 980px;
+    margin: 0 auto;
+}
+/* ヘッダー　CSS　*/
+header {
+    color: brown;
+    background-color: bisque;
+    overflow: hidden;
+}
+#logo {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+#head_meg {
+    margin-top: 20px;
+    margin-left: 70px;
+    float: left;
+}
+h1 {
+    font-size: 28px;
+    color:crimson;
+}
+/* ナビゲーション　CSS　*/
+nav {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav ul {list-style-type: none;}
+nav li {
+    width: 160px;
+    height: 60px;
+    float: left;        
+}
+nav a {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: darkred;
+    text-decoration: none;
+    background-image: url(../images/gold.png);  
+}
+nav a:hover {
+    color: crimson;
+    font-weight: bold;
+    background-image: url(../images/silvar.png);
+}
+/* メインコンテンツ　CSS　*/
+main {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+h2{
+    font-size: 24px;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 20px;
+    line-height: 60px;
+    text-align: center;
+    color: darkred;
+    background-image: url(../images/silver-h2.png);
+}
+h3 {
+    width: 220px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    color: darkred;
+    background-image: url(../images/frame.png);
+    float:left;
+}
+.margin_p{
+    margin-top: 45px;
+    margin-left: 20px;
+    color: brown;
+    float:left;
+}
+#picup_img {
+    clear: both;
+    margin-right: 20px;
+    float: left;
+}
+#picup_p{
+    width: 440px;
+    height: 280px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: burlywood;
+    float: left;
+}
+h4 {
+    width: 200px;
+    height: 60px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 60px;
+    color: darkred;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(../images/goldpanel.png);
+}
+#classic {clear: both;}
+.sweets {
+    width: 280px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color:burlywood;
+    float: left;
+}
+/* フッター　CSS　*/
+footer{
+    clear: both;
+    padding: 20px;
+    text-align: right;
+    background-color: bisque;
+}
+/* 問い合わせテーブル　*/
+table {
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+th,td {
+    border: 1px solid #333333;
+    padding: 5px;
+}
+th {
+    width: 200px;
+    background-color: firebrick;
+    color: white;
+}
+td {width: 600px;}
+#submit{text-align: right;}
+/* レスポシブルデザイン */
+@media screen and (max-width:979px) {
+    #wrap{width:100%;}
+    #logo{
+        display: block;
+        margin: 5px auto;
+        float: none;
+    }
+    #head_meg{
+        margin: 0;
+        text-align: center;
+        float: none;
+    }
+    h1{font-size:20px;}
+    #head_img{
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        width 100%;
+        padding: 0;  
+    }
+    nav li{width:33.3%;}
+    nav a{
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size:100% 60px;
+    }
+    main{padding: 2%;}
+    h2{
+        font-size:20px;
+        width: 320px;
+        height: 48px;
+        margin: 15px auto;
+        background-size: contain;
+    }
+    th{
+        width: 25%;
+        min-width: 120px;
+        max-width: 200px;
+    }
+    textarea{width: 95%;}
+}
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>マテリアルスイーツ：問い合わせ</title>
+    <meta name="description" content="マテリアルスイーツの問い合わせフォームです。">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+                <img src="images/logo.png" id="logo">
+                <div id="head_meg">
+                    <h1>マテリアルスイーツ：問い合わせ</h1>
+                    <p>お問い合わせや感想などは、下記のメールフォームよりお願いします。</p>
+                </div>
+                <img src="images/blanc_head.jpg" alt="金のモンブラヘッダー画像">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">店舗案内</a></li>
+                    <li><a href="#">スイーツ</a></li>
+                    <li><a href="#">素材について</a></li>
+                    <li><a href="#">予約販売</a></li>
+                    <li><a href="#">問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>                
+                <h2>お問い合わせ</h2>
+                <p>当店の商品について質問やご意見については
+                    下記フォームよりお問い合わせください。<br>
+                    また、任意ですがアンケート内容にも協力お願い致します。</p>
+                <form name="form1" method="get" action="">
+                    <table>
+                        <tr>
+                            <th>氏名（必須）</th>
+                            <td><input type="text" name="name" size="30"></td>
+                        </tr>
+                        <tr>
+                            <th>Eメール（必須）</th>
+                            <td><input type="email" name="email" size="30"></td>
+                        </tr>
+                        <tr>                        
+                            <th>電話番号（任意）</th>
+                            <td><input type="tel" name="tel" size="30"></td>
+                        </tr>
+                        <tr>
+                            <th>アンケート（任意）</th>
+                            <td>
+                                <p>性別</p>
+                                <input type="radio" name="sex" value="男" checked="checked"> 男　
+                                <input type="radio" name="sex" value="女"> 女
+                                <p>来店回数</p>
+                                <input type="radio" name="riyu" value="1">何度もきたことがある
+                                <input type="radio" name="riyu" value="2">来店したことはある
+                                <input type="radio" name="riyu" value="3">来店したことはない
+                                <p>当店で好きなスイーツ</p>
+                                <input type="checkbox" name="riyu" value="1">モンブラン
+                                <input type="checkbox" name="riyu" value="2">苺のショートケーキ
+                                <input type="checkbox" name="riyu" value="3">マカロン
+                                <input type="checkbox" name="riyu" value="4">パウンドケーキ
+                                <input type="checkbox" name="riyu" value="5">その他
+                            </td>
+                        </tr>
+                        <tr>       
+                            <th>用件（必須）</th>
+                            <td>
+                                <select name="inquiry">
+                                    <option value="">選択してください</option>
+                                    <option value="sweets">スイーツについて</option>
+                                    <option value="reservation">予約販売について</option>
+                                    <option value="request">当店への要望・ご意見</option>
+                                     <option value="other">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>問い合わせ内容（必須）</th>
+                            <td><textarea name="freeans" rows="5" cols="60"></textarea></td>
+                        </tr>
+                        <tr>    
+                            <td colspan="2" id="submit">
+                                <input type="submit" value="送信">　
+                                <input type="reset" value="取り消し">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <small>Copyright 2018 jikyo sweets All Rights Reserved.</small>
+        </footer>
+    </div>
+</body>
+</html>
